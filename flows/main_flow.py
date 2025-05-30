@@ -9,7 +9,7 @@ def linkedin_etl_flow():
     url = "https://www.linkedin.com/jobs/search/?keywords=python"  # Cambiar según necesidad
 
     raw_data = extract_offers(url)
- 
+    print("Datos extraídos:", raw_data)
 
 if __name__ == "__main__":
     linkedin_etl_flow()
